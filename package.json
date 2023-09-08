@@ -1,0 +1,37 @@
+{
+  "name": "tz-mego-tickets",
+  "description": "FA2 non-fungible tickets on Tezos",
+  "version": "2.0.10",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn lerna run build",
+    "sandbox": "yarn start-sandbox",
+    "contract:compile": "ts-node ./scripts/contract_compile.ts",
+    "contract:deploy": "ts-node ./scripts/contract_compile && ts-node ./scripts/contract_deploy.ts",
+    "contract:addminter": "ts-node ./scripts/contract_addminter.ts",
+    "contract:removeminter": "ts-node ./scripts/contract_removeminter.ts",
+    "contract:mint": "ts-node ./scripts/contract_mint.ts",
+    "contract:minted": "ts-node ./scripts/contract_minted.ts",
+    "contract:collection": "ts-node ./scripts/contract_collection.ts",
+    "contract:freeze": "ts-node ./scripts/contract_freeze.ts",
+    "contract:unfreeze": "ts-node ./scripts/contract_unfreeze.ts",
+    "nfts:upload": "ts-node ./scripts/nft_upload.ts",
+    "signer": "ts-node ./scripts/derive_signer.ts"
+  },
+  "devDependencies": {
+    "@types/configstore": "^5.0.1",
+    "configstore": "^6.0.0",
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "@pinata/sdk": "^1.1.23",
+    "@taquito/signer": "^11.1.0",
+    "axios": "^0.25.0",
+    "minimist": "^1.2.5",
+    "openai": "^2.0.1"
+  }
+}

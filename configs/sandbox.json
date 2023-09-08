@@ -1,0 +1,17 @@
+{
+    "activeNetwork": "sandbox",
+    "contract": {
+        "name": "MEGOFEST",
+        "description": "MEGO Tickets.",
+        "homepage": "https://demo.mego.cx",
+        "authors": [
+            "YOMI <> hey@yomi.digital"
+        ],
+        "source": "https://github.com/yomi-digital/mego-tickets-tezos"
+    },
+    "provider": "http://localhost:20000",
+    "privKey": "edsk3RFgDiCt7tWB2oe96w1eRw72iYiiqZPLu9nnEY23MYRp2d8Kkx",
+    "lambdaView": "KT1AM6ZXRqNDZMXmJgMQRrK6xGcLH9a3YkTz",
+    "contract_address": "KT1Ev5mhrsFYrGFmBp4gPamgjAb9QXSG93Ge",
+    "minter_address": "tz1YPSCGWXwBdTncK2aCctSZAXWvGsGwVJqU"
+}
